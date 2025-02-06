@@ -1,9 +1,4 @@
 import {
-	Geist,
-	Geist_Mono,
-	Cormorant,
-	Crimson_Pro,
-	Parisienne,
 	Noto_Serif,
 } from "next/font/google";
 import "./globals.css";

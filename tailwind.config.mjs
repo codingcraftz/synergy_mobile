@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-
 export default {
 	content: [
 		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,7 +11,11 @@ export default {
 				background: "var(--background)",
 				foreground: "var(--foreground)",
 			},
+			fontFamily: {
+				serif: ["var(--font-serif)", "serif"], // Tailwind에서 사용 가능하도록 설정
+			},
 		},
 	},
 	plugins: [],
 };
+
