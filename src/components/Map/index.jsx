@@ -7,7 +7,7 @@ import { CustomOverlayMap, Map, MapMarker } from "react-kakao-maps-sdk";
 import { FaRegCopy } from "react-icons/fa";
 
 export default function NavigationAndAddress() {
-	const kakaoNaviUrl = `kakaonavi://route?dest=${HALL_LNG},${HALL_LAT}&dest_name=${encodeURIComponent(HALL_NAME)}&appkey=${process.env.NEXT_PUBLIC_KAKAO_NATIVE_KEY}`;
+	const kakaoNaviUrl = `kakaomap://look?p=${HALL_LNG},${HALL_LAT}`;
 
 	const naverNaviUrl = `nmap://navigation?dlat=${HALL_LAT}&dlng=${HALL_LNG}&dname=${encodeURIComponent(HALL_NAME)}&appname=your.package.name`;
 
@@ -86,13 +86,13 @@ export default function NavigationAndAddress() {
 						onClick={() => (window.location.href = kakaoNaviUrl)}
 						className="bg-[#FEE500] text-[#191919] px-4 py-2 rounded-lg shadow-md hover:bg-yellow-400 flex-1"
 					>
-						카카오네비
+						카카오맵
 					</button>
 					<button
 						onClick={() => (window.location.href = naverNaviUrl)}
 						className="bg-[#00c73c] text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-600 flex-1"
 					>
-						네이버네비
+						네이버맵
 					</button>
 					<button
 						onClick={() => (window.location.href = tMapNaviUrl)}
