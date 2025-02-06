@@ -1,7 +1,7 @@
 /* 전체 달력 배경 */
 .react-calendar {
   background-color: black;
-  color: #f9a8d4; /* 핑크색 텍스트 */
+  color: #956f48; /* 핑크색 텍스트 */
   border: none;
   border-radius: 8px;
   padding: 10px;
@@ -9,7 +9,7 @@
 
 /* 요일 헤더 스타일 */
 .react-calendar__month-view__weekdays {
-  color: #f9a8d4; /* 핑크색 */
+  color: #956f48; /* 핑크색 */
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -17,31 +17,31 @@
 /* 날짜 스타일 */
 .react-calendar__tile {
   font-size: 1rem;
-  color: #f9a8d4; /* 기본 핑크색 */
+  color: #956f48; /* 기본 핑크색 */
   transition: all 0.3s ease;
 }
 
 .react-calendar__tile--active {
-  background-color: #f472b6; /* 활성화된 날짜의 배경색 */
+  background-color: #956f48; /* 활성화된 날짜의 배경색 */
   color: white;
   border-radius: 50%;
 }
 
 .react-calendar__tile--now {
-  border: 2px solid #f472b6; /* 오늘 날짜 강조 */
+  border: 2px solid #956f48; /* 오늘 날짜 강조 */
   border-radius: 50%;
 }
 
 /* 마우스 오버 효과 */
 .react-calendar__tile:hover {
-  background-color: #f9a8d4;
+  background-color: #956f48;
   color: black;
   border-radius: 50%;
 }
 
 /* 결혼식 날짜 */
 .react-calendar__tile--highlight {
-  background-color: #f472b6;
+  background-color: #956f48;
   color: white;
   border-radius: 50%;
 }

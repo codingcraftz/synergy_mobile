@@ -4,6 +4,7 @@ import Main from "@/components/Main";
 import KAKAOMAP from "@/components/Map";
 import Message from "@/components/Message";
 import Information from "@/components/Information";
+import WeddingCalendar from "@/components/WeddingCalendar";
 
 export default function Home() {
 	return (
@@ -12,6 +13,7 @@ export default function Home() {
 				<Main />
 				<Message />
 				<Information />
+				<WeddingCalendar />
 				<KAKAOMAP />
 			</main>
 
