@@ -12,7 +12,7 @@ export default {
 				foreground: "var(--foreground)",
 			},
 			fontFamily: {
-				serif: ["var(--font-serif)", "serif"], // Tailwind에서 사용 가능하도록 설정
+				serif: ["var(--font-serif)", "Noto Serif", "serif"],
 			},
 		},
 	},

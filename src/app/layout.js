@@ -1,12 +1,14 @@
 import {
-	Noto_Serif,
+	Noto_Serif_KR,
 } from "next/font/google";
 import "./globals.css";
 
-const serif = Noto_Serif({
-	subsets: ["latin"], // 사용할 언어 서브셋
-	weight: ["400", "500", "600"], // 사용할 폰트 두께
+const serif = Noto_Serif_KR({
+	subsets: ["latin"],
+	weight: ["400", "500", "600", "700"],
+	variable: "--font-serif", // Tailwind에서 사용할 수 있도록 CSS 변수 등록
 });
+
 
 export const metadata = {
 	title: "개소식 초대창",

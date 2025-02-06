@@ -3,17 +3,17 @@ import Frame from "../Frame"
 
 const Message = () => {
 	return (
-		<div className="flex flex-col items-center font-sans">
+		<div className="flex flex-col items-center">
 			<Frame />
 			<p className="text-[#956f48] tracking-widest font-serif">MESSAGE</p>
 			<p className="font-bold tracking-widest font-serif">인사말</p>
 			<div className="relative w-36 h-36 md:w-56 md:h-56 rounded-full overflow-hidden shadow-lg py-6 mt-5">
 				<Image
-					src="/images/ceo_image.jpg" // 실제 CEO 이미지 경로로 변경
+					src="/images/ceo_image.jpg"
 					alt="CEO Image"
 					layout="fill"
 					objectFit="cover"
-					objectPosition="top" // 이미지의 상단을 중심으로 보여줌
+					objectPosition="top"
 					className="rounded-full"
 				/>
 			</div>
