@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
 				/>
 				<meta
 					property="og:image"
-					content="https://opengraph.b-cdn.net/production/images/33fc6cd8-29d9-4e91-887a-270c533792aa.jpg?token=oSZxZFZcZU8dhsdFrRLJ5_25IiQ84NuqtEZtDyDdRac&height=1440&width=961&expires=33271380406"
+					content="https://opengraph.b-cdn.net/production/images/821547a8-96e0-4699-b8f0-b0c2e932446d.png?token=CKZiBjVrYCoAEIbSQkvW4gjmnxccAEIy4XK9ALikLXA&height=1121&width=1029&expires=33274832364"
 				/>
 
 				{/* Twitter Meta Tags */}
@@ -49,7 +49,7 @@ export default function RootLayout({ children }) {
 				/>
 				<meta
 					name="twitter:image"
-					content="https://opengraph.b-cdn.net/production/images/33fc6cd8-29d9-4e91-887a-270c533792aa.jpg?token=oSZxZFZcZU8dhsdFrRLJ5_25IiQ84NuqtEZtDyDdRac&height=1440&width=961&expires=33271380406"
+					content="https://opengraph.b-cdn.net/production/images/821547a8-96e0-4699-b8f0-b0c2e932446d.png?token=CKZiBjVrYCoAEIbSQkvW4gjmnxccAEIy4XK9ALikLXA&height=1121&width=1029&expires=33274832364"
 				/>
 			</head>
 
