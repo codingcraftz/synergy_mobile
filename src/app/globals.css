@@ -3,19 +3,29 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #fffefb;
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #fffefb;
     --foreground: #ededed;
   }
 }
 
+@font-face {
+  font-family: "rolland"; /* 폰트 이름 */
+  src: url("/fonts/rolland.ttf") format("truetype"); /* 폰트 경로와 형식 */
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
+  margin: 0;
+  padding: 0;
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  font-family: "rolland", sans-serif; /* 커스텀 폰트 적용 */
 }
