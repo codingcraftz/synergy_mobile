@@ -7,7 +7,7 @@ const Message = () => {
 			<Frame />
 			<p className="text-[#956f48] tracking-widest font-serif">MESSAGE</p>
 			<p className="font-bold tracking-widest font-serif">인사말</p>
-			<div className="relative w-36 h-36 md:w-56 md:h-56 rounded-full overflow-hidden shadow-lg py-6">
+			<div className="relative w-36 h-36 md:w-56 md:h-56 rounded-full overflow-hidden shadow-lg py-6 mt-5">
 				<Image
 					src="/images/ceo_image.jpg" // 실제 CEO 이미지 경로로 변경
 					alt="CEO Image"

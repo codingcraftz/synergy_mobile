@@ -82,13 +82,13 @@ export default function NavigationAndAddress() {
 				<div className="flex gap-4">
 					<button
 						onClick={() => (window.location.href = kakaoNaviUrl)}
-						className="bg-yellow-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-pink-600 flex-1"
+						className="bg-[#FEE500] text-[#191919] px-4 py-2 rounded-lg shadow-md hover:bg-pink-600 flex-1"
 					>
 						카카오네비
 					</button>
 					<button
 						onClick={() => (window.location.href = naverNaviUrl)}
-						className="bg-green-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-600 flex-1"
+						className="bg-[#00c73c] text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-600 flex-1"
 					>
 						네이버네비
 					</button>
