@@ -7,13 +7,7 @@ import { CustomOverlayMap, Map, MapMarker } from "react-kakao-maps-sdk";
 import { FaRegCopy } from "react-icons/fa";
 
 export default function NavigationAndAddress() {
-	const kakaoNaviUrl = `kakaonavi://navigate?param=${encodeURIComponent(JSON.stringify({
-		destination: {
-			name: HALL_NAME,
-			x: String(HALL_LNG), // 경도
-			y: String(HALL_LAT), // 위도
-		}
-	}))}&apiver=1.0&appkey=${process.env.NEXT_PUBLIC_KAKAO_NATIVE_KEY}&keytype=WGS84`;
+	const kakaoNaviUrl = `kakaonavi://route?dest=${HALL_LNG},${HALL_LAT}&dest_name=${encodeURIComponent(HALL_NAME)}&appkey=${process.env.NEXT_PUBLIC_KAKAO_NATIVE_KEY}`;
 
 	const naverNaviUrl = `nmap://navigation?dlat=${HALL_LAT}&dlng=${HALL_LNG}&dname=${encodeURIComponent(HALL_NAME)}&appname=your.package.name`;
 
