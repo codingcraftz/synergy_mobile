@@ -7,8 +7,16 @@ import { CustomOverlayMap, Map, MapMarker } from "react-kakao-maps-sdk";
 import { FaRegCopy } from "react-icons/fa";
 
 export default function NavigationAndAddress() {
-	const kakaoNaviUrl = `kakaonavi://navigate?name=${HALL_NAME}&coord_type=wgs84&pos_x=${HALL_LNG}&pos_y=${HALL_LAT}`;
-	const naverNaviUrl = `nnavimap://navigate?name=${HALL_NAME}&lat=${HALL_LAT}&lng=${HALL_LNG}`;
+	const kakaoNaviUrl = `kakaonavi://navigate?param=${encodeURIComponent(JSON.stringify({
+		destination: {
+			name: HALL_NAME,
+			x: String(HALL_LNG), // 경도
+			y: String(HALL_LAT), // 위도
+		}
+	}))}&apiver=1.0&appkey=${process.env.NEXT_PUBLIC_KAKAO_NATIVE_KEY}&keytype=WGS84`;
+
+	const naverNaviUrl = `nmap://navigation?dlat=${HALL_LAT}&dlng=${HALL_LNG}&dname=${encodeURIComponent(HALL_NAME)}&appname=your.package.name`;
+
 	const tMapNaviUrl = `tmap://route?goalname=${HALL_NAME}&goalx=${HALL_LNG}&goaly=${HALL_LAT}`;
 
 	const copyAddress = async () => {
@@ -82,7 +90,7 @@ export default function NavigationAndAddress() {
 				<div className="flex gap-4">
 					<button
 						onClick={() => (window.location.href = kakaoNaviUrl)}
-						className="bg-[#FEE500] text-[#191919] px-4 py-2 rounded-lg shadow-md hover:bg-pink-600 flex-1"
+						className="bg-[#FEE500] text-[#191919] px-4 py-2 rounded-lg shadow-md hover:bg-yellow-400 flex-1"
 					>
 						카카오네비
 					</button>
