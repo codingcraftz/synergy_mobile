@@ -19,7 +19,7 @@ export default function Home() {
 
 			{/* 푸터 */}
 			<footer className="bg-gray-800 text-white text-center py-6 text-sm">
-				<p>시너지그룹 개소식에 초대합니다.</p>
+				<p>메타리치 캠퍼니언사업 개소식에 초대합니다.</p>
 				<p className="mt-2">뜻깊은 자리를 함께 빛내 주시면 감사하겠습니다.</p>
 			</footer>
 		</div>

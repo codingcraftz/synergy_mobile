@@ -76,11 +76,12 @@ export default function NavigationAndAddress() {
 						<p>복사하기</p>
 					</button>
 				</div>
+				<p className="text-sm text-red-400 mt-3">*주차는 개소식 당일 유원플러스 빌딩 항시 무료입니다.</p>
 			</div>
 
 
 			{/* 내비게이션 버튼 */}
-			<div className="flex flex-col gap-4 w-full px-4 mt-4">
+			<div className="flex flex-col gap-4 w-full px-4 mt-2">
 				<div className="flex gap-4">
 					<button
 						onClick={() => (window.location.href = kakaoNaviUrl)}
