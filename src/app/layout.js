@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
 				<meta property="og:title" content="초대합니다." />
 				<meta
 					property="og:description"
-					content="메타리치 컴페니언 사업부 개소식에 초대합니다."
+					content="메타리치 컴패니언 사업부 개소식에 초대합니다."
 				/>
 				<meta
 					property="og:image"
@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
 				<meta name="twitter:title" content="초대합니다." />
 				<meta
 					name="twitter:description"
-					content="메타리치 컴페니언사업부 개소식에 초대합니다."
+					content="메타리치 컴패니언사업부 개소식에 초대합니다."
 				/>
 				<meta
 					name="twitter:image"
