@@ -1,12 +1,11 @@
 "use client";
 
-import { HALL_NAME, HALL_ADDRESS, HALL_LAT, HALL_LNG } from "@/utils/constants";
 import Script from "next/script";
 import { Toaster, toast } from "react-hot-toast";
 import { CustomOverlayMap, Map, MapMarker } from "react-kakao-maps-sdk";
 import { FaRegCopy } from "react-icons/fa";
 
-export default function NavigationAndAddress() {
+export default function KakaoMap({ HALL_LAT, HALL_LNG, HALL_NAME, HALL_ADDRESS, PICKER_NAME, PICKER_Y, PARKING_MESSAGE, borderColor }) {
 	const kakaoNaviUrl = `kakaomap://look?p=${HALL_LAT},${HALL_LNG}`;
 
 	const naverNaviUrl = `nmap://navigation?dlat=${HALL_LAT}&dlng=${HALL_LNG}&dname=${encodeURIComponent(HALL_NAME)}&appname=your.package.name`;
@@ -36,7 +35,7 @@ export default function NavigationAndAddress() {
 				strategy="beforeInteractive"
 			/>
 
-			<div className="border-2 border-[#956f48] font-bold px-4 py-1 rounded-full font-crimson">
+			<div className={`border-2 font-bold px-4 py-1 rounded-full font-crimson`} style={{ borderColor }}>
 				오시는 길
 			</div>
 
@@ -52,23 +51,18 @@ export default function NavigationAndAddress() {
 						position={{ lat: HALL_LAT, lng: HALL_LNG }}
 						yAnchor={1}
 					>
-						<div className="customoverlay -translate-y-12 bg-white px-2 border-2 border-[#956f48] rounded-lg">
-							<a
-								href="https://naver.me/GDafxW5N"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<span className="text-sm flex justify-center items-center">유원플러스 빌딩 203호</span>
-							</a>
+						<div className={`customoverlay ${PICKER_Y} bg-white px-2 border-2 border-[${borderColor}] rounded-lg`}>
+							<span className="text-sm flex justify-center items-center">{PICKER_NAME}</span>
 						</div>
 					</CustomOverlayMap>
 				</Map>
 			</div>
 
 			<div className="flex flex-col gap-1 py-1 font-sans items-center w-full px-2">
-				<p>서울 특별시 송파구 위례서로 252</p>
+				<p>{HALL_NAME}</p>
 				<div className="flex">
-					<p>유원플러스 빌딩 203호</p> 				<button
+					<p>{PICKER_NAME}</p>
+					<button
 						onClick={copyAddress}
 						className="bg-gray-800 text-white px-2 py-1 rounded-lg shadow-md hover:bg-gray-900 text-sm ml-2 flex items-center justify-center gap-1"
 					>
@@ -76,7 +70,9 @@ export default function NavigationAndAddress() {
 						<p>복사하기</p>
 					</button>
 				</div>
-				<p className="text-sm text-red-400 mt-3">*주차는 개소식 당일 유원플러스 빌딩 항시 무료입니다.</p>
+				{PARKING_MESSAGE &&
+					<p className="text-sm text-red-400 mt-3">{PARKING_MESSAGE}</p>
+				}
 			</div>
 
 

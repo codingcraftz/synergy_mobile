@@ -4,7 +4,7 @@ import Frame from "../Frame"
 const Information = () => {
 	return (
 		<div className="flex flex-col items-center font-sans">
-			<Frame />
+			<Frame fill={'#956f48'} />
 			<p className="text-[#956f48] tracking-widest font-serif">INFORMATION</p>
 			<p className="font-bold tracking-widest font-serif">안  내</p>
 			<section className="flex flex-col gap-2 p-4 text-center font-sans py-6 items-start mt-5">

@@ -2,9 +2,8 @@
 
 import React from "react";
 import "./CalendarStyles.css";
-import { WEDDING_DATE } from "@/utils/constants";
 
-export default function WeddingCalendar() {
+export default function WeddingCalendar({ WEDDING_DATE, textColor }) {
 	const weddingDate = new Date(WEDDING_DATE); // 결혼식 날짜
 
 	// 날짜 생성 로직
@@ -55,12 +54,12 @@ export default function WeddingCalendar() {
 	const formattedDate = `${year}.${month}.${day} ${weekday}`;
 
 	return (
-		<div className="text-[#956f48] flex flex-col items-center justify-center font-sans">
+		<div className={`text-[${textColor}] flex flex-col items-center justify-center font-sans`}>
 			{/* 헤더에 동적으로 날짜 표시 */}
 			<h2 className="text-lg">{formattedDate}</h2>
 			<div className="w-80 rounded-lg p-2">
 				{/* 달력 헤더 */}
-				<div className="grid grid-cols-7 text-center text-[#956f48] mb-4">
+				<div className={`grid grid-cols-7 text-center text-[${textColor}] mb-4`}>
 					<div>SUN</div>
 					<div>MON</div>
 					<div>TUE</div>
@@ -77,8 +76,8 @@ export default function WeddingCalendar() {
 								<div
 									key={dayIndex}
 									className={`py-2 ${dayValue === weddingDate.getDate()
-										? "bg-[#956f48] opacity-90 text-white font-bold rounded-full"
-										: "text-[#956f48]"
+										? `bg-[${textColor}] opacity-90 text-white font-bold rounded-full`
+										: `text-[${textColor}]`
 										}`}
 								>
 									{dayValue || ""}

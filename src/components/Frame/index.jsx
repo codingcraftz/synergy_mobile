@@ -1,11 +1,11 @@
-const Frame = () => {
+const Frame = ({ fill }) => {
 	return (
 		<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
 			width="150px" height="50px" viewBox="0 0 3783.000000 1312.000000"
 			preserveAspectRatio="xMidYMid meet">
 
 			<g transform="translate(0.000000,1312.000000) scale(0.100000,-0.100000)"
-				fill="#956f48" stroke="none">
+				fill={fill} stroke="none">
 				<path d="M18697 11783 c-255 -423 -435 -1115 -509 -1953 -18 -197 -18 -1044 0
 -1240 43 -483 113 -886 218 -1249 46 -158 141 -421 153 -421 3 0 44 916 91
 2035 47 1119 87 2035 90 2035 3 0 43 -916 90 -2035 47 -1119 88 -2035 91
