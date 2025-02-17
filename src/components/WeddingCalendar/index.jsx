@@ -76,8 +76,8 @@ export default function WeddingCalendar({ WEDDING_DATE, textColor }) {
 								<div
 									key={dayIndex}
 									className={`py-2 ${dayValue === weddingDate.getDate()
-										? `bg-[${textColor}] opacity-90 text-white font-bold rounded-full`
-										: `text-[${textColor}]`
+										? "bg-[#956f48] opacity-90 text-white font-bold rounded-full"
+										: "text-[#956f48]"
 										}`}
 								>
 									{dayValue || ""}
