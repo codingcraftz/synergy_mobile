@@ -3,6 +3,7 @@ import Message from "@/components/Message";
 import WeddingCalendar from "@/components/WeddingCalendar";
 import KakaoMap from "@/components/Map";
 import Frame from "@/components/Frame";
+import SnowEffect from "@/components/SnowEffect";
 
 
 export const metadata = {
@@ -33,6 +34,7 @@ export const metadata = {
 export default function JinKyoPage() {
 	return (
 		<div className="flex flex-col min-h-screen max-w-screen-sm mx-auto bg-[#fcfcfc] shadow-md">
+			<SnowEffect />
 			<main className="flex flex-col flex-1 pb-6 text-[#956f48] gap-14">
 				<Main image='/images/jin-kyo.png' />
 				<Message color={'#956f48'}>

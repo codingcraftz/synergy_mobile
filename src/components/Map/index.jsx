@@ -51,7 +51,7 @@ export default function KakaoMap({ HALL_LAT, HALL_LNG, HALL_NAME, HALL_ADDRESS, 
 						position={{ lat: HALL_LAT, lng: HALL_LNG }}
 						yAnchor={1}
 					>
-						<div className={`customoverlay ${PICKER_Y} bg-white px-2 border-2 border-[${borderColor}] rounded-lg`}>
+						<div className={`customoverlay ${PICKER_Y} bg-white px-2 border-2 rounded-lg`} style={{ borderColor }}>
 							<span className="text-sm flex justify-center items-center">{PICKER_NAME}</span>
 						</div>
 					</CustomOverlayMap>
