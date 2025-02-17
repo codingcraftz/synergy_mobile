@@ -1,5 +1,3 @@
-"use client";
-
 import Main from "@/components/Main";
 import KakaoMap from "@/components/Map";
 import Message from "@/components/Message";

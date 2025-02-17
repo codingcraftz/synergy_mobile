@@ -1,4 +1,3 @@
-import Information from "@/components/Information";
 import Main from "@/components/Main";
 import Message from "@/components/Message";
 import WeddingCalendar from "@/components/WeddingCalendar";
@@ -59,10 +58,10 @@ export default function JinKyoPage() {
 					<Frame fill={'#956f48'} />
 					<p className="tracking-widest font-serif">INFORMATION</p>
 					<p className="font-bold tracking-widest font-serif">안  내</p>
-					<section className="flex flex-col gap-2 p-4 text-center font-sans py-6 items-start mt-5">
+					<section className="flex flex-col gap-2 p-4 text-center font-sans py-6 items-start translate-y-10">
 						<div className="flex gap-2 items-center">
 							<p className="bg-orange-400 text-white rounded-lg px-2">개소식</p>
-							<p className="text-md font-bold text-red-400">17:30 시작</p>
+							<p className="text-md">2025년 2월 27일 (목) PM 2:00</p>
 						</div>
 					</section>
 				</div >
