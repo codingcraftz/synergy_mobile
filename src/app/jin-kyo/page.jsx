@@ -16,10 +16,10 @@ export const metadata = {
 		type: "website",
 		images: [
 			{
-				url: "https://example.com/jin-kyo-image.png", // Open Graph 이미지 URL 변경
+				url: "https://opengraph.b-cdn.net/production/images/3b4efbfc-8e65-4d1b-89e0-6186ea4addd7.png?token=WkCEq-DtlLoiVy5W4ka7lbGclY8SbNSeey9r9lxAxAA&height=773&width=794&expires=33275763678",
 				width: 1200,
 				height: 630,
-				alt: "진교님의 초대장",
+				alt: "개소식 초대장",
 			},
 		],
 	},
@@ -27,7 +27,7 @@ export const metadata = {
 		card: "summary_large_image",
 		title: "초대합니다.",
 		description: "메타리치 컴패니언 사업부 개소식에 초대합니다.",
-		images: ["https://example.com/jin-kyo-image.png"], // 트위터 이미지 변경
+		images: ["https://opengraph.b-cdn.net/production/images/3b4efbfc-8e65-4d1b-89e0-6186ea4addd7.png?token=WkCEq-DtlLoiVy5W4ka7lbGclY8SbNSeey9r9lxAxAA&height=773&width=794&expires=33275763678"], // 트위터 이미지 변경
 	},
 };
 
