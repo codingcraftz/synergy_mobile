@@ -6,6 +6,31 @@ import Message from "@/components/Message";
 import Information from "@/components/Information";
 import WeddingCalendar from "@/components/WeddingCalendar";
 
+export const metadata = {
+	title: "개소식 초대장",
+	description: "메타리치 컴패니언 사업부 개소식 초대장",
+	openGraph: {
+		title: "초대합니다.",
+		description: "메타리치 컴패니언 사업부 개소식에 초대합니다.",
+		url: "https://synergymobile.vercel.app/",
+		type: "website",
+		images: [
+			{
+				url: "https://opengraph.b-cdn.net/production/images/821547a8-96e0-4699-b8f0-b0c2e932446d.png",
+				width: 1200,
+				height: 630,
+				alt: "개소식 초대장",
+			},
+		],
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "초대합니다.",
+		description: "메타리치 컴패니언 사업부 개소식에 초대합니다.",
+		images: ["https://opengraph.b-cdn.net/production/images/821547a8-96e0-4699-b8f0-b0c2e932446d.png"],
+	},
+};
+
 export default function Home() {
 	return (
 		<div className="flex flex-col min-h-screen max-w-screen-sm mx-auto bg-[#f7f6f1] shadow-md">
