@@ -33,10 +33,10 @@ export default function SongpaOpeningEvent() {
           isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10'
         }`}
       >
-        <div className='w-1/3 flex justify-center transform hover:scale-110 transition-transform duration-300'>
+                <div className='w-1/3 flex justify-center transform hover:scale-110 transition-transform duration-300'>
           <Image
-            src='/synergy_logo.png'
-            alt='Synergy Logo'
+            src='/metarich_logo.png'
+            alt='Metarich Logo'
             width={90}
             height={90}
             className='object-contain drop-shadow-md'
@@ -44,8 +44,8 @@ export default function SongpaOpeningEvent() {
         </div>
         <div className='w-1/3 flex justify-center transform hover:scale-110 transition-transform duration-300'>
           <Image
-            src='/metarich_logo.png'
-            alt='Metarich Logo'
+            src='/synergy_logo.png'
+            alt='Synergy Logo'
             width={90}
             height={90}
             className='object-contain drop-shadow-md'
