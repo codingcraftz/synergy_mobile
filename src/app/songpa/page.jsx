@@ -147,7 +147,7 @@ export default function SongpaOpeningEvent() {
                 {itemNumber === 7 && (
                   <div className='text-gray-800 leading-relaxed'>
                     <span className='font-bold'>흡연 안내</span> 지정된 흡연 구역을 이용해 주시고, 꽁초는 재떨이에
-                    버려주세요!! 🚭
+                    버려주세요!!
                   </div>
                 )}
 
@@ -186,7 +186,8 @@ export default function SongpaOpeningEvent() {
                 {itemNumber === 10 && (
                   <div className='text-gray-800 leading-relaxed'>
                     <span className='font-bold'>소중한 마음,</span> 돼지머리에 전달해주시면 저희 송파지점 영업가족의
-                    발전과 복지를 위해 소중히 사용하겠습니다. 진심으로 감사합니다. 💙
+                    발전과 복지를 위해 소중히 사용하겠습니다.
+                    <p>진심으로 감사합니다. 💙</p>
                   </div>
                 )}
               </li>
