@@ -138,7 +138,7 @@ export default function SongpaOpeningEvent() {
                     <span className='font-bold'>답례품 안내</span> 행사 종료 시 답례품을 준비했습니다. <br />
                     <div className='mt-2 bg-amber-50 p-2 rounded-md text-sm border border-amber-200'>
                       <span className='font-medium'>럭키드로우 당첨 안내:</span>
-                      <br />- 뽑은 번호에 숫자 '3'이 <span className='underline'>하나라도 있으면</span> 노란색 선물
+                      <br />- 숫자 '3'이 <span className='underline'>하나라도 있으면</span> 노란색 선물
                       <br />- 숫자 '3'이 <span className='underline'>없으면</span> 흰색 선물을 받아가세요
                     </div>
                   </div>
