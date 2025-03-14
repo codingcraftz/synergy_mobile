@@ -33,18 +33,11 @@ export default async function Image() {
             padding: '2rem',
             borderRadius: '1rem',
             margin: '2rem',
+            boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
           }}
         >
-          <div
-            style={{
-              fontSize: '72px',
-              fontWeight: 'bold',
-              color: '#0f766e',
-              marginBottom: '1rem',
-            }}
-          >
-            SYNERGY
-          </div>
+          {/* Logo */}
+          <img src='https://synergymobile.vercel.app/synergy_logo.png' alt='Synergy Logo' width={400} height={100} />
         </div>
 
         <div
@@ -76,7 +69,6 @@ export default async function Image() {
     ),
     {
       ...size,
-      fonts: undefined,
     }
   );
 }
