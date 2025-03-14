@@ -13,84 +13,70 @@ export default async function Image() {
     (
       <div
         style={{
-          background: 'linear-gradient(to bottom, #f0f9ff, #e0f2fe)',
           width: '100%',
           height: '100%',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          padding: '40px',
-          fontFamily: 'sans-serif',
+          backgroundColor: '#ffffff',
+          backgroundImage: 'linear-gradient(to bottom, #f0f9ff, #e0f2fe)',
         }}
       >
-        {/* Logo Container */}
         <div
           style={{
             display: 'flex',
+            flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            marginBottom: '40px',
-            width: '100%',
-            height: '200px',
-            position: 'relative',
+            backgroundColor: '#ffffff',
+            padding: '2rem',
+            borderRadius: '1rem',
+            margin: '2rem',
           }}
         >
-          {/* Background color block for logo */}
           <div
             style={{
-              background: 'white',
-              padding: '20px',
-              borderRadius: '12px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+              fontSize: '72px',
+              fontWeight: 'bold',
+              color: '#0f766e',
+              marginBottom: '1rem',
             }}
           >
-            <div
-              style={{
-                color: '#0f766e',
-                fontSize: '64px',
-                fontWeight: 'bold',
-              }}
-            >
-              SYNERGY
-            </div>
+            SYNERGY
           </div>
         </div>
 
-        {/* Title */}
         <div
           style={{
-            fontSize: '48px',
+            fontSize: '56px',
             fontWeight: 'bold',
             color: '#0f766e',
-            marginBottom: '20px',
+            marginBottom: '1.5rem',
             textAlign: 'center',
           }}
         >
           개소식에 초대합니다
         </div>
 
-        {/* Description */}
         <div
           style={{
-            fontSize: '24px',
+            fontSize: '32px',
             color: '#374151',
             textAlign: 'center',
-            maxWidth: '80%',
-            lineHeight: 1.4,
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '0.5rem',
           }}
         >
-          메타리치·시너지그룹 컴패니언사업부
-          <br />
-          송파지점 개소식
+          <div>메타리치·시너지그룹</div>
+          <div>컴패니언사업부 송파지점 개소식</div>
         </div>
       </div>
     ),
     {
       ...size,
+      fonts: undefined,
     }
   );
 }
