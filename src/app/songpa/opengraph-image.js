@@ -21,6 +21,7 @@ export default async function Image() {
           alignItems: 'center',
           justifyContent: 'center',
           padding: '40px',
+          fontFamily: 'sans-serif',
         }}
       >
         {/* Logo Container */}
@@ -31,19 +32,32 @@ export default async function Image() {
             justifyContent: 'center',
             marginBottom: '40px',
             width: '100%',
-            maxHeight: '200px',
+            height: '200px',
+            position: 'relative',
           }}
         >
-          <img
-            src={new URL('/public/synergy_logo.png', import.meta.url).toString()}
-            alt="시너지그룹 로고"
+          {/* Background color block for logo */}
+          <div
             style={{
-              objectFit: 'contain',
-              width: 'auto',
-              height: '100%',
-              maxWidth: '80%',
+              background: 'white',
+              padding: '20px',
+              borderRadius: '12px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
             }}
-          />
+          >
+            <div
+              style={{
+                color: '#0f766e',
+                fontSize: '64px',
+                fontWeight: 'bold',
+              }}
+            >
+              SYNERGY
+            </div>
+          </div>
         </div>
 
         {/* Title */}
@@ -66,21 +80,17 @@ export default async function Image() {
             color: '#374151',
             textAlign: 'center',
             maxWidth: '80%',
+            lineHeight: 1.4,
           }}
         >
-          메타리치·시너지그룹 컴패니언사업부 송파지점 개소식
+          메타리치·시너지그룹 컴패니언사업부
+          <br />
+          송파지점 개소식
         </div>
       </div>
     ),
     {
       ...size,
-      fonts: [
-        {
-          name: 'Pretendard',
-          data: await fetch(
-            new URL('/public/fonts/Pretendard-Bold.woff', import.meta.url)
-          ).then((res) => res.arrayBuffer()),
-          weight: 700,
-          style: 'normal',
-        },
- 
+    }
+  );
+}
